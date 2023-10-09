@@ -26,10 +26,163 @@ html { box-sizing: border-box; }
 	#242424		(skoro) černá - na běžný text
 	#f0f0f0		světle šedé pozadí prostřední sekce
 	#303339		tmavé pozadí patičky
+
+	font-family: 'Lora', serif;
+	font-family: 'Playfair Display', serif;
 */
 
 
 body {
 	margin: 0;
+	font-size: 18px;
+	line-height: 1.5;
+	font-family: 'Lora', serif;
+	color: #242424;
 }
 
+header,
+section {
+	display: flex;
+	justify-content: center;
+}
+
+section {
+	padding: 80px 0;
+	background-color: antiquewhite;
+}
+.tmavsi {
+	background-color: #f0f0f0;
+}
+
+.innercolumn {
+	flex-direction: column;
+}
+
+.inner,
+.innercolumn {
+	display: flex;
+}
+
+.inner {
+	max-width: 1100px;
+}
+
+.menu {
+	align-items: center;
+	justify-content: space-between;
+	flex-grow: 1;
+}
+
+header ul {
+	display: flex;
+}
+
+header li {
+	list-style: none;
+	padding: 10px 15px;
+
+}
+
+header a {
+	text-decoration: none;
+	color: #242424;
+}
+
+header a:active,
+header a:focus,
+header a:hover {
+	background-color: #f195b2;
+	color: #f0f0f0;
+	padding: 15px 40px;
+	border-radius: 30px;
+}
+
+header img {
+	width: 170px;
+	padding: 30px 0;
+}
+
+
+h1 {
+	font-size: 52px;
+}
+
+h2 {
+	font-size: 36px;
+	color: #3e606b;
+}
+
+h3 {
+	font-size: 18px;
+	color: #3e606b;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Playfair Display', serif;
+}
+
+.pozadi {
+	background-image:url(images/cupcake.jpg);
+	background-size: cover;
+}
+
+.hero {	
+	color: #f0f0f0;
+	max-width: 1100px;
+	padding-right: calc(0.4*1100px);
+}	
+
+.hero p {
+	font-style: italic;
+	font-size: 24px;
+}
+
+.dolni {
+	display: flex;
+	max-width: 1100px;
+}
+
+.levy {
+	margin-right: 30px;
+}
+
+.dolnipadding {
+	padding-bottom: 15px;
+}
+
+.produkt {
+	margin-right: 30px;
+}
+
+.produkt, 
+.produkt4 {
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+	padding: 30px;
+	background-color: #303339;
+	color: #f0f0f0;
+}
+
+.tlacitko {
+	background-color: #f195b2;
+	color: #f0f0f0;
+	padding: 15px 40px;
+	margin: 15px 0;
+	border-radius: 30px;
+	text-decoration: none;
+}
+
+.tlacitko:active,
+.tlacitko:focus,
+.tlacitko:hover {
+	background-color: #d2567d;
+}
+
+.zakulat {
+	border-radius: 5px;
+}
